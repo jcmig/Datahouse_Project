@@ -13,6 +13,17 @@ def calculateScore(applicant, team, attrWeights):
         if attr in maxAttr and attr in attrWeights:
             score += (applicant["attributes"][attr] / maxAttr[attr]) * attrWeights[attr]
 
-    # Ensuring score is between 0 and 1
-    score = max(0, min(score, 1))
     return round(score, 2)
+
+'''
+def normalizeScores(scores):
+    minScore = min(applicant["score"] for applicant in scores)
+    maxScore = max(applicant["score"] for applicant in scores)
+
+    normalizedScores = []
+    for applicant in scores:
+        normalizedScore = (applicant["score"] - minScore) / (maxScore - minScore)
+        normalizedScores.append({"name" : applicant["name"], "score" : normalizedScore})
+
+    return normalizedScores
+'''
