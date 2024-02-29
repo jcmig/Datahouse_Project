@@ -15,3 +15,15 @@ def calculateScore(applicant, team, attrWeights):
 
     return round(score, 2)
 
+'''
+def normalizeScores(scores):
+    minScore = min(applicant["score"] for applicant in scores)
+    maxScore = max(applicant["score"] for applicant in scores)
+
+    normalizedScores = []
+    for applicant in scores:
+        normalizedScore = (applicant["score"] - minScore) / (maxScore - minScore)
+        normalizedScores.append({"name" : applicant["name"], "score" : normalizedScore})
+
+    return normalizedScores
+'''
