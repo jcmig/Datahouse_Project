@@ -61,6 +61,7 @@ sampleData = """
 }
 """
 
+# Needs to be revised to include more attributes - Could possibly be done with AI due to the sheer number of attributes that can be tracked
 weightMultiplierData = '''
 {
     "attributes": {

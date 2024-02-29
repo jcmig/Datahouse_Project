@@ -17,7 +17,7 @@ for attr in team[0]["attributes"]:
     if attr in weightMultiplier["attributes"]:
         attrWeights[attr] *= weightMultiplier["attributes"][attr]
 
-# Calculating scores
+# Calculating scores using calculateScore in functions.py
 scores = []
 for applicant in applicants:
     score = calculateScore(applicant, team, attrWeights)
