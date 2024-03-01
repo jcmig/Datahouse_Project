@@ -2,6 +2,7 @@ import json
 from dataset import *
 from functions import *
 
+# Initialize JSON dataset
 data = json.loads(sampleData)
 weightMultiplier = json.loads(weightMultiplierData)
 
@@ -26,6 +27,7 @@ for applicant in applicants:
         "score" : score
     })
 
+# Output compatibility scores as JSON
 outputData = {"scoredApplicants" : scores}
 output = json.dumps(outputData, indent = 4)
 print(output)

@@ -16,4 +16,5 @@ def calculateScore(applicant, team, attrWeights):
     # Ensuring score is between 0 and 1
     score = max(0, min(score, 1))
 
+    # To round score to 2 decimal places
     return round(score, 2)
