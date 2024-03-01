@@ -12,7 +12,6 @@ applicants = data["applicants"]
 # Determining the weight of each attribute
 attrWeights = {}
 for attr in team[0]["attributes"]:
-    # For simplicity's sake, I took the weight of each attribute to be 1 over the total number of attributes
     attrWeights[attr] = (1 / len(team[0]["attributes"]))
 
     if attr in weightMultiplier["attributes"]:
